@@ -10,6 +10,7 @@
             color: #000000;
             background-color: #7F52FF;
             display: flex;
+            flex-direction: column; /* A mudança foi realizada aqui */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -24,6 +25,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             max-width: 400px;
             width: 100%; /* Garante que a largura não exceda 400px, mas pode ser menor */
+            margin-bottom: 20px; /* A mudança foi realizada aqui */
         }
         .button {
             background-color: #E24462;
@@ -32,7 +34,8 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 500;
             text-decoration: none;
             display: inline-block;
             margin-bottom: 20px;
@@ -57,16 +60,25 @@
                 padding: 15px;
             }
         }
+        .link-eventos {
+            display: block;
+            font-size: 18px;
+            color: #7F52FF;
+            text-decoration: none;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Bem-vindo(a) à comunidade</h2>
+        <img src="../assets/img/kotlin-devs-brasil.png" alt="Kotlin Devs Brasil">
         <h1>Kotlin Devs Brasil</h1>
-        <a href="https://discord.gg/sc2hZjtfb2" class="button">Junte-se a nós no Discord!</a>
+        <a href="https://discord.gg/sc2hZjtfb2" class="button">Junte-se a nós no Discord</a>
         <p>Participe da <b>Kotlin Devs Brasil</b> no Discord e conecte-se com outras pessoas desenvolvedoras <b>Kotlin</b> como você.</p>
-        <img src="kotlin-devs-brasil.png" alt="Kotlin Devs Brasil">
         <p><small>Não tem o Discord? <a href="https://discord.com/download">Baixe aqui</a> para Windows, Mac, Linux, iOS, ou Android.</small></p>
+    </div>
+    <div class="container">
+        <a href="/events" class="link-eventos">📅 Eventos da Kotlin Devs Brasil</a>
     </div>
 </body>
 </html>
