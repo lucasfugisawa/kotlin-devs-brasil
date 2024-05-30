@@ -27,6 +27,16 @@
             width: 100%; /* Garante que a largura não exceda 400px, mas pode ser menor */
             margin-bottom: 20px; /* A mudança foi realizada aqui */
         }
+        .linksContainer {
+            text-align: left;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%; /* Garante que a largura não exceda 400px, mas pode ser menor */
+            margin-bottom: 20px; /* A mudança foi realizada aqui */
+        }
         .button {
             background-color: #E24462;
             color: #FFFFFF;
@@ -61,12 +71,13 @@
             }
         }
         .link-eventos {
-            display: block;
-            font-size: 18px;
-            color: #7F52FF;
-            text-decoration: none;
+            display: inline;
+            font-size: 16px;
+            color: #000000;
+            /*text-decoration: none;*/
             font-weight: 500;
         }
+
     </style>
 </head>
 <body>
@@ -77,8 +88,12 @@
         <p>Participe da <b>Kotlin Devs Brasil</b> no Discord e conecte-se com outras pessoas desenvolvedoras <b>Kotlin</b> como você.</p>
         <p><small>Não tem o Discord? <a href="https://discord.com/download">Baixe aqui</a> para Windows, Mac, Linux, iOS, ou Android.</small></p>
     </div>
-    <div class="container">
-        <a href="/events" class="link-eventos">📅 Eventos da Kotlin Devs Brasil</a>
+    <div class="linksContainer">
+        <span>📅</span><a href="../events/index.html" class="link-eventos">Eventos da Kotlin Devs Brasil</a><br>
+        <span>🌐</span><a href="https://kotlinlang.org/community/user-groups/" class="link-eventos">Kotlin Devs Brasil no site de KUGs da JetBrains</a><br>
+        <br>
+        <span><small>A <strong>Kotlin Devs Brasil</strong> é uma comunidade independente, <a href="https://kotlinlang.org/community/user-groups/" target="_blank">reconhecida</a> e suportada pela <a href="https://jetbrains.com/"><strong>JetBrains</strong></a> como um KUG <i>(Kotlin User Group)</i>.</small></span>
+        <a href="https://kotlinlang.org/community/user-groups/" target="_blank"><img src="../assets/img/jetbrains.png" alt="Kotlin Devs Brasil"></a>
     </div>
 </body>
 </html>
